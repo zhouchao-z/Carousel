@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+	<div class="carousel J_carousel">
+		<div class="carousel-wrap">
+			<ul class="list-car fade">
+				<li class="car-item active"><img src="./img/one.jpg" alt=""></li>
+				<li class="car-item"><img src="./img/two.jpg" alt=""></li>
+				<li class="car-item"><img src="./img/three.jpg" alt=""></li>
+			</ul>
+			<div class="indicator">
+				<span data-dir="prev" class="dir prev"></span>
+				<span data-dir="next" class="dir next"></span>
+			</div>
+			<div class="dot">
+				<i class="item current"></i>
+				<i class="item"></i>
+				<i class="item"></i>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="./index.js"></script>
+
+	<script>
+		const oCar = document.getElementsByClassName('J_carousel')[0];
+
+		new Carousel({
+			oCar,
+			speed: 1000
+		});
+	</script>
+	
+</body>
+</html>
